@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Madu Muria - Madu Asli & Murni dari Lereng Gunung Muria</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Madu Muria - Dipanen langsung dari peternakan lebah di kawasan Gunung Muria, dikemas tanpa campuran agar kualitas madu tetap terjaga">
+  <meta name="keywords" content="Madu Muria">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://api.madumuria.store" crossorigin>
+  <link rel="dns-prefetch" href="https://api.madumuria.store">
+  <link rel="canonical" href="https://madumuria.store/">
+  <link rel="icon" type="image/webp" href="assets/favicon.webp">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <meta property="og:title" content="Madu Muria - Madu Asli & Murni dari Lereng Gunung Muria">
+  <meta property="og:description" content="Madu Muria - Dipanen langsung dari peternakan lebah di kawasan Gunung Muria, dikemas tanpa campuran agar kualitas madu tetap terjaga">
+  <meta property="og:url" content="https://madumuria.store/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Madu Muria">
+  <meta property="og:image" content="https://madumuria.store/assets/madu-muria.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Madu Muria - Madu Asli & Murni dari Lereng Gunung Muria">
+  <meta name="twitter:description" content="Madu Muria - Dipanen langsung dari peternakan lebah di kawasan Gunung Muria, dikemas tanpa campuran agar kualitas madu tetap terjaga">
+  <meta name="twitter:image" content="https://madumuria.store/assets/madu-muria.webp">
+
+  <style>
+    /* --- SISTEM WARNA & FONT --- */
+    :root {
+      --primary-color: #3A1F0B;
+      --accent-color: #E89A1C;
+      --bg-light: #FDFBF7;
+      --text-dark: #222222;
+      --text-muted: #555555;
+      --font-title: Georgia, "Times New Roman", serif;
+      --font-body: system-ui,
+                   -apple-system,
+                   BlinkMacSystemFont,
+                   "Segoe UI",
+                   Roboto,
+                   Helvetica,
+                   Arial,
+                   sans-serif;
+    }
+
+    /* --- RESET & DASAR --- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    /* --- TOPBAR PROMO --- */
+    .topbar {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      text-align: center;
+      padding: 12px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      border-bottom: 3px solid var(--accent-color);
+    }
+    .topbar span {
+      color: var(--accent-color);
+      font-weight: 800;
+    }
+
+    /* --- CONTAINER --- */
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      min-height: 100vh;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      padding-bottom: 100px;
+    }
+
+    /* --- HERO SECTION --- */
+    .hero {
+      /*padding: 25px 20px 10px 20px;  Sedikit dilonggarkan */
+      padding: 30px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #FFF9EE 0%, #FFFFFF 100%);
+    }
+    .badge-trust {
+      display: inline-block;
+      background-color: #E2F0D9;
+      color: #385723;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero h1 {
+      font-family: var(--font-title);
+      font-size: 26px;
+      color: var(--primary-color);
+      line-height: 1.35;
+      margin-bottom: 15px;
+    }
+    .hero h1 em {
+      color: var(--accent-color);
+      font-style: italic;
+      font-weight: 700;
+    }
+    .hero .subheadline {
+      font-size: 17px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* FOTO PRODUK UTAMA */
+    .product-image-container {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 25px;
+      border: 1px solid #EAEAEA;
+      background-color: #F5F5F5;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* TIGA PILAR JAMINAN AMAN (SANGAT PENTING UNTUK 40+) */
+    .trust-icons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background: #F9F9F9;
+      padding: 15px 10px;
+      border-radius: 8px;
+      border: 1px dashed #DDD;
+      margin-bottom: 10px;
+    }
+    .icon-box {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary-color);
+      line-height: 1.3;
+    }
+    .icon-box div {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    /* Efek scroll halus */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* --- TOMBOL AKSI UTAMA (CTA) --- */
+    .cta-button {
+      display: block;
+      width: 100%;
+      max-width: 340px;
+      margin: 25px auto;
+      margin-bottom: 0px;
+      box-sizing: border-box;
+      background: linear-gradient(180deg, #46B956 0%, #2F8F41 100%);
+      border:1px solid #D8A63C;
+      color: #ffffff;
+      padding: 16px 24px;
+      font-size: 1.1em;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow:0 8px 20px rgba(47,143,65,.25);
+      transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
+      text-align: center;
+    }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(180deg,#4CC65D 0%, #348F47 100%);
+      box-shadow:0 10px 24px rgba(47,143,65,.35);
+    }
+
+    /* --- SECTION MANFAAT (EDUKASI) --- */
+    .section-manfaat {
+      padding: 35px 20px;
+      background-color: #FFFDF9;
+      border-top: 1px solid #F0ECE3;
+    }
+    .section-manfaat h2 {
+      font-family: var(--font-title);
+      font-size: 22px;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .manfaat-list {
+      list-style: none;
+    }
+    .manfaat-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+      border-left: 4px solid var(--accent-color);
+    }
+    .manfaat-check {
+      font-size: 22px;
+      margin-right: 15px;
+      line-height: 1;
+    }
+    .manfaat-text strong {
+      color: var(--primary-color);
+      display: block;
+      font-size: 19px;
+      margin-bottom: 2px;
+    }
+    .manfaat-text p {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    /* --- SECTION TESTIMONI --- */
+
+
+    /* --- FLOATING WA --- */
+
+
+    /* --- PERBAIKAN RESPONSIVE UNTUK HP (PENTING!) --- */
+    @media (max-width: 480px) {
+      body { font-size: 17px; }
+      /* Kita turunkan sedikit ke 23px di HP agar judul pas 2 baris dan tidak memenuhi layar */
+      .hero h1 { font-size: 23px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PROMO TOPBAR (Sangat Jelas, Tidak Berkedip Membingungkan) -->
+  <div class="topbar">
+    🍯 <span>PROMO :</span> 1 Kg Rp 119.000 • Gratis Ongkir se-Pulau Jawa (Jakarta, Yogyakarta, & Banten)
+  </div>
+
+  <div class="container">
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <!-- Badge Trust: Mencuri perhatian & membangun percaya dalam 1 detik pertama -->
+      <div class="badge-trust">✓ 100% Madu Alami Gunung Muria</div>
+
+      <!-- Headline: Menyasar langsung masalah stamina/kesehatan tubuh usia 40+ -->
+      <h1>Madu Muria untuk Ikhtiar Menjaga Kesehatan Keluarga</h1>
+      
+      <!-- Sub-headline: Menegaskan kualitas produk tanpa menyiksa mata untuk membaca -->
+      <p class="subheadline">Dipanen langsung dari peternakan lebah di kawasan Gunung Muria, dikemas tanpa campuran dan tanpa pemanasan agar kualitas madu tetap terjaga</p>
+
+      <!-- FOTO PRODUK UTAMA -->
+      <div class="product-image-container">
+        <!-- Ganti 'madu-muria.webp' dengan link foto produk Anda -->
+        <img src="assets/madu-muria.webp" alt="Madu Muria Asli Gunung Muria" width="600" height="600" loading="eager" fetchpriority="high" decoding="sync">
+      </div>
+
+      <!-- TIGA PILAR JAMINAN AMAN (Meredam keraguan usia 40+) -->
+      <div class="trust-icons">
+        <div class="icon-box">
+          <div>🏡</div>
+          <strong>(Bisa COD)</strong><br>Bayar di Rumah
+        </div>
+        <div class="icon-box">
+          <div>🚛</div>
+          <strong>(Gratis Ongkir)</strong><br>Pulau Jawa
+        </div>
+        <div class="icon-box">
+          <div>🛡️</div>
+          <strong>(Garansi 100%)</strong><br>Tanpa Campuran
+        </div>
+      </div>
+
+      <!-- TOMBOL AJAKAN BERTINDAK UTAMA -->
+      <!-- Mengarah ke ID "FormOrder" -->
+      <a href="#form-order" class="cta-button">
+        Pesan Sekarang • Bisa COD
+      </a>
+    </section>
+
+    <!-- SECTION MANFAAT (Fokus ke Keluhan Kesehatan Usia 40+) -->
+    <section class="section-manfaat">
+      <h2>Mengapa Banyak Bapak & Ibu Memilih Madu Muria?</h2>
+      
+      <ul class="manfaat-list">
+        <li class="manfaat-item">
+          <div class="manfaat-check">🍃</div>
+          <div class="manfaat-text">
+            <strong>Aman untuk Lambung & Imunitas</strong>
+            <p>Melapisi dinding lambung, meredakan asam lambung, maag, serta memperkuat imun tubuh dari serangan penyakit ringan.</p>
+          </div>
+        </li>
+        <li class="manfaat-item">
+          <div class="manfaat-check">🦴</div>
+          <div class="manfaat-text">
+            <strong>Menjaga Stamina & Sendi</strong>
+            <p>Membantu tubuh tidak mudah lelah, pegal-pegal, dan menjaga kelenturan sendi saat beraktivitas seharian.</p>
+          </div>
+        </li>
+        <li class="manfaat-item">
+          <div class="manfaat-check">❤️</div>
+          <div class="manfaat-text">
+            <strong>Jaga Jantung & Kestabilan Gula Darah</strong>
+            <p>Mengandung antioksidan alami yang baik untuk kesehatan jantung, membantu mengontrol kolesterol dan menjaga gula darah tetap stabil.</p>
+          </div>
+        </li>
+        <li class="manfaat-item">
+          <div class="manfaat-check">🌙</div>
+          <div class="manfaat-text">
+            <strong>Mengatasi Susah Tidur (Insomnia)</strong>
+            <p>Minum 1 sendok sebelum tidur membantu menenangkan saraf sehingga bangun pagi jadi lebih sehat, segar, dan fit.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECTION TESTIMONI (Menggunakan bahasa seumuran mereka) -->
+<div id="testimoni" style="background:#FFFDF9; border:0px solid #e8d9b5;
+            border-radius:14px; padding:20px 14px; margin:25px auto;
+            font-family:'Segoe UI', Arial, sans-serif;
+            max-width:600px;">
+
+  <!-- Judul Section -->
+  <div style="text-align:center; margin-bottom:20px;">
+    <h2 style="color:#8d6e63; margin:0 0 6px 0; font-size: 1.4em; font-weight: bold;">
+      💬 Testimoni Pelanggan
+    </h2>
+    <p style="font-size:14px; color:#666; margin:0;">
+      Chat asli dari Bapak/Ibu yang sudah mencoba Madu Muria
+    </p>
+  </div>
+
+  <!-- CHAT BOX 1: PAK SLAMET -->
+  <div style="background: #efeae2; border-radius: 12px; padding: 12px 10px; margin-bottom: 20px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05);">
+    <!-- Header WA -->
+    <div style="background: #075e54; color: #ffffff; padding: 10px 12px; border-radius: 10px 10px 0 0; font-size: 14px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center;">
+        <div style="background: #128c7e; border: 1px solid #ffffff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 10px; font-size: 14px;">
+          P
+        </div>
+        <div>
+          <strong style="display: block; font-size: 14px;">Pak Slamet - Kudus</strong>
+          <span style="font-size: 11px; color: #cfd8dc; display: block; margin-top: 1px;">Online</span>
+        </div>
+      </div>
+      <div style="font-size: 16px; opacity: 0.9; padding-right: 4px;">📞</div>
+    </div>
+    <!-- Isi Obrolan -->
+    <div style="padding: 12px 8px 6px 8px; display: flex; flex-direction: column;">
+      <!-- Pesan Masuk (Pelanggan) -->
+      <div style="background: #ffffff; padding: 8px 10px; border-radius: 0px 10px 10px 10px; max-width: 85%; margin-bottom: 8px; align-self: flex-start; box-shadow: 0 1px 1px rgba(0,0,0,0.1);">
+        <span style="font-size: 15px; color: #111111; display: block; line-height: 1.4;">
+          Alhamdulillah Kak, madu yang kemarin cocok 👍 Lambung sekarang lebih nyaman, tidak sering kambuh. Mau order lagi 1 kg ya 🙏
+        </span>
+        <div style="font-size: 10px; color: #888888; text-align: right; margin-top: 4px;">08.12</div>
+      </div>
+      <!-- Pesan Keluar (Balasan Toko) -->
+      <div style="background: #dcf8c6; padding: 8px 10px; border-radius: 10px 0px 10px 10px; max-width: 85%; align-self: flex-end; box-shadow: 0 1px 1px rgba(0,0,0,0.1); margin-top: 4px;">
+        <span style="font-size: 15px; color: #111111; display: block; line-height: 1.4;">
+          Alhamdulillah, ikut senang mendengarnya Pak Slamet 😊 Siap, untuk orderan 1 kg kami proses hari ini ya Pak. Terima kasih banyak atas kepercayaannya 🙏
+        </span>
+        <div style="font-size: 10px; color: #888888; text-align: right; margin-top: 4px; display: flex; justify-content: flex-end; align-items: center;">
+          08.15 <span style="color: #34b7f1; margin-left: 3px; font-weight: bold; font-size: 12px; line-height: 1;">✓✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAT BOX 2: IBU SRI -->
+  <div style="background: #efeae2; border-radius: 12px; padding: 12px 10px; margin-bottom: 20px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05);">
+    <!-- Header WA -->
+    <div style="background: #075e54; color: #ffffff; padding: 10px 12px; border-radius: 10px 10px 0 0; font-size: 14px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center;">
+        <div style="background: #128c7e; border: 1px solid #ffffff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 10px; font-size: 14px;">
+          I
+        </div>
+        <div>
+          <strong style="display: block; font-size: 14px;">Ibu Sri - Semarang</strong>
+          <span style="font-size: 11px; color: #cfd8dc; display: block; margin-top: 1px;">Online</span>
+        </div>
+      </div>
+      <div style="font-size: 16px; opacity: 0.9; padding-right: 4px;">📞</div>
+    </div>
+    <!-- Isi Obrolan -->
+    <div style="padding: 12px 8px 6px 8px; display: flex; flex-direction: column;">
+      <!-- Pesan Masuk (Pelanggan) -->
+      <div style="background: #ffffff; padding: 8px 10px; border-radius: 0px 10px 10px 10px; max-width: 85%; margin-bottom: 8px; align-self: flex-start; box-shadow: 0 1px 1px rgba(0,0,0,0.1);">
+        <span style="font-size: 15px; color: #111111; display: block; line-height: 1.4;">
+          Saya rutin minum tiap pagi. Badan terasa lebih fit, gula darah stabil 👍
+        </span>
+        <div style="font-size: 10px; color: #888888; text-align: right; margin-top: 4px;">06.46</div>
+      </div>
+      <!-- Pesan Keluar (Balasan Toko) -->
+      <div style="background: #dcf8c6; padding: 8px 10px; border-radius: 10px 0px 10px 10px; max-width: 85%; align-self: flex-end; box-shadow: 0 1px 1px rgba(0,0,0,0.1); margin-top: 4px;">
+        <span style="font-size: 15px; color: #111111; display: block; line-height: 1.4;">
+          MasyaAllah, alhamdulillah Bu Sri. Menjaga kesehatan di pagi hari memang sangat bagus, semoga sehat dan bugar selalu ya Bu 😊
+        </span>
+        <div style="font-size: 10px; color: #888888; text-align: right; margin-top: 4px; display: flex; justify-content: flex-end; align-items: center;">
+          06.50 <span style="color: #34b7f1; margin-left: 3px; font-weight: bold; font-size: 12px; line-height: 1;">✓✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAT BOX 3: BAPAK RAHMAT -->
+  <div style="background: #efeae2; border-radius: 12px; padding: 12px 10px; margin-bottom: 16px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05);">
+    <!-- Header WA -->
+    <div style="background: #075e54; color: #ffffff; padding: 10px 12px; border-radius: 10px 10px 0 0; font-size: 14px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center;">
+        <div style="background: #128c7e; border: 1px solid #ffffff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 10px; font-size: 14px;">
+          B
+        </div>
+        <div>
+          <strong style="display: block; font-size: 14px;">Bapak Rahmat - Solo</strong>
+          <span style="font-size: 11px; color: #cfd8dc; display: block; margin-top: 1px;">Online</span>
+        </div>
+      </div>
+      <div style="font-size: 16px; opacity: 0.9; padding-right: 4px;">📞</div>
+    </div>
+    <!-- Isi Obrolan -->
+    <div style="padding: 12px 8px 6px 8px; display: flex; flex-direction: column;">
+      <!-- Pesan Masuk (Pelanggan) -->
+      <div style="background: #ffffff; padding: 8px 10px; border-radius: 0px 10px 10px 10px; max-width: 85%; margin-bottom: 8px; align-self: flex-start; box-shadow: 0 1px 1px rgba(0,0,0,0.1);">
+        <span style="font-size: 15px; color: #111111; display: block; line-height: 1.4;">
+          Saya rutin minum pagi & malam 👍 Alhamdulillah badan terasa lebih enak, kolesterol lebih terjaga. Sekarang istri juga ikut minum 🙏
+        </span>
+        <div style="font-size: 10px; color: #888888; text-align: right; margin-top: 4px;">13.24</div>
+      </div>
+      <!-- Pesan Keluar (Balasan Toko) -->
+      <div style="background: #dcf8c6; padding: 8px 10px; border-radius: 10px 0px 10px 10px; max-width: 85%; align-self: flex-end; box-shadow: 0 1px 1px rgba(0,0,0,0.1); margin-top: 4px;">
+        <span style="font-size: 15px; color: #111111; display: block; line-height: 1.4;">
+          Alhamdulillah, senang sekali mendengarnya Pak Rahmat! Salam sehat juga untuk Ibu di rumah ya Pak, semoga Madu Muria selalu membawa berkah sehat sekeluarga 🙏
+        </span>
+        <div style="font-size: 10px; color: #888888; text-align: right; margin-top: 4px; display: flex; justify-content: flex-end; align-items: center;">
+          13.28 <span style="color: #34b7f1; margin-left: 3px; font-weight: bold; font-size: 12px; line-height: 1;">✓✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kalimat Penutup (Closing) -->
+  <div style="text-align:center; margin-top:16px;">
+    <p style="font-size:14px; color:#555; margin:0; line-height: 1.5;">
+      Alhamdulillah, banyak pelanggan yang cocok dan melakukan <strong>repeat order</strong> 🙏
+    </p>
+  </div>
+</div>
+
+<!-- HARGA PROMO -->
+<div id="harga-promo" style="background:#F9F9F9; border:1px solid #ffe0b2;
+            border-radius:14px; padding:24px 20px; margin:25px auto;
+            font-family:'Segoe UI', Arial, sans-serif; color:#333;
+            max-width:600px; line-height:1.6; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+
+  <!-- HEADER -->
+  <div style="text-align:center; margin-bottom:20px;">
+    <h2 style="color:#d35400; font-weight:bold; margin:0 0 6px 0; font-size:1.5em;">
+      🔥 Harga Khusus Hari Ini
+    </h2>
+    <p style="font-size:15px; color:#666; margin:0;">
+      Khusus pemesanan hari ini, Bapak & Ibu mendapatkan harga diskon resmi
+    </p>
+  </div>
+
+  <!-- PILIHAN PAKET -->
+  
+  <!-- Paket 1: 500 Gram -->
+  <div style="border: 2px solid #e0e0e0; border-radius: 10px; padding: 16px; margin-bottom: 14px; background: #fafafa; text-align: center;">
+    <span style="font-size: 18px; font-weight: bold; color: #3A1F0B;">🍯 Paket Mini (500 Gram)</span>
+    <div style="margin-top: 6px;">
+
+      <strong style="color:#333333; font-size:22px;">Rp 75.000</strong>
+    </div>
+  </div>
+
+  <!-- Paket 2: 1 Kg -->
+  <div style="border: 2px solid #27ae60; border-radius: 10px; padding: 16px; margin-bottom: 20px; background: #f4fbf7; text-align: center;">
+    <div style="margin-bottom: 8px;">
+      <span style="background: #27ae60; color: #fff; font-size: 11px; font-weight: bold; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; display: inline-block;">
+        Produk Paling Laris
+      </span>
+    </div>
+    <span style="font-size: 19px; font-weight: bold; color: #3A1F0B; display: block;">🍯 Paket Hemat (1 Kilo)</span>
+    <div style="margin-top: 6px;">
+      <span style="text-decoration:line-through; color:#999999; font-size: 15px; margin-right: 8px;">Rp 149.000</span>
+      <strong style="color:#27ae60; font-size:24px;">Rp 119.000</strong>
+    </div>
+    <span style="font-size: 13px; color: #27ae60; font-weight: bold; display: block; margin-top: 4px;">👉 Hemat Rp 30.000 + Isi Lebih Banyak</span>
+  </div>
+
+  <!-- LAYANAN UTAMA (Menggabungkan COD, Gratis Ongkir & Garansi ke format Kotak) -->
+  <div style="background: #fff3cd; border: 2px solid #e0e0e0; border-radius: 10px; padding: 16px; text-align: left; margin-bottom: 20px;">
+    <!-- Poin 1: COD -->
+    <div style="margin-bottom: 12px;">
+      <p style="margin: 0; font-size: 15px; color: #856404; font-weight: bold;">
+        🏡 BISA COD
+      </p>
+      <p style="margin: 2px 0 0 0; font-size: 13px; color: #66521a;">
+        Bayar setelah paket diterima
+      </p>
+    </div>
+
+    <!-- Poin 2: Gratis Ongkir -->
+    <div style="margin-bottom: 12px; border-top: 1px dashed #ffeeba; padding-top: 10px;">
+      <p style="margin: 0; font-size: 15px; color: #856404; font-weight: bold;">
+        🚚 GRATIS ONGKIR SE-PULAU JAWA
+      </p>
+      <p style="margin: 2px 0 0 0; font-size: 13px; color: #66521a;">
+        Termasuk Banten, Jakarta & Yogyakarta
+      </p>
+    </div>
+
+    <!-- Poin 3: Garansi -->
+    <div style="border-top: 1px dashed #ffeeba; padding-top: 10px;">
+      <p style="margin: 0; font-size: 15px; color: #856404; font-weight: bold;">
+        🛡️ 100% ALAMI
+      </p>
+      <p style="margin: 2px 0 0 0; font-size: 13px; color: #66521a;">
+        Tanpa campuran pemanis, pengawet, & pengental.
+      </p>
+    </div>
+  </div>
+
+  <!-- DIVIDER -->
+  <hr style="border:none; border-top:1px dashed #f6c343; margin:18px 0;">
+
+  <!-- FOOTER CLOSING KE FORM -->
+  <div style="text-align: center;">
+    <p style="margin: 0; font-size:14px; color:#555; line-height: 1.5;">
+      Silakan isi formulir di bawah ini. Tim kami akan segera menghubungi Bapak/Ibu melalui WhatsApp untuk konfirmasi pesanan
+    </p>
+  </div>
+</div>
+
+<!-- ✨ FORM ORDER MADU MURIA -->
+<div id="form-order" style="max-width:600px; margin:0 auto; padding:20px; border:1px solid #ffe0b2; border-radius:12px; background:#ffffff; box-shadow:0 3px 8px rgba(0,0,0,0.08); font-family:Arial,sans-serif;">
+  <h2 style="text-align:center; color:#d35400; margin-bottom:25px; font-weight:bold; font-size:1.3em;">
+    📝 Data Pengiriman
+  </h2>
+
+  <form id="maduForm" novalidate>
+    <label for="nama">Nama Penerima:</label><br>
+    <input type="text" id="nama" name="nama" required placeholder="Ahmad" style="width:100%; padding:14px; margin-top:6px;margin-bottom:22px; border-radius:8px; border:1px solid #ccc;font-size:17px;">
+    <div id="namaError" class="error" aria-live="assertive"></div>
+
+    <label for="no_wa">Nomor WhatsApp:</label><br>
+    <input type="tel" id="no_wa" name="no_wa" required placeholder="Dimulai 08xxxxx dst." pattern="[0-9]*" inputmode="numeric" style="width:100%; padding:14px; margin-top:6px; margin-bottom:22px; border-radius:8px; border:1px solid #ccc; font-size:17px;">
+    <div id="noWaError" class="error" aria-live="assertive"></div>
+
+    <label for="alamat">Alamat Lengkap:</label><br>
+    <textarea id="alamat" name="alamat" rows="4" required placeholder="Nama Jalan, RT/RW, Blok/No.Rumah, Desa/Kelurahan, Kecamatan, Kabupaten" style="width:100%; padding:14px; margin-top:6px; margin-bottom:22px; border-radius:8px; border:1px solid #ccc; font-size:17px;"></textarea>
+    <div id="alamatError" class="error" aria-live="assertive"></div>
+
+    <label for="varian">Pilihan Produk:</label><br>
+    <select id="varian" name="varian" required style="width:100%; padding:14px; margin-top:6px; margin-bottom:26px; border-radius:8px; border:1px solid #ccc; font-size:17px;">
+      <option value="Madu Muria 1kg">Madu 1 Kg - [Rp 119.000]</option>
+      <option value="Madu Muria 500gr">Madu 0,5 Kg - [Rp 75.000]</option>
+    </select>
+    <div id="varianError" class="error" aria-live="assertive"></div>
+
+    <!-- Honeypot -->
+    <input type="text" name="website" id="website" style="display:none !important" tabindex="-1" autocomplete="off">
+
+    <!-- Hidden fields -->
+    <input type="hidden" name="value" id="hiddenValue">
+    <input type="hidden" name="event_name" value="Lead">
+    <input type="hidden" name="event_time" id="hiddenEventTime">
+    <input type="hidden" name="event_id" id="hiddenEventId">
+    <input type="hidden" name="fbp" id="hiddenFbp">
+    <input type="hidden" name="fbc" id="hiddenFbc">
+    <input type="hidden" name="utm_source" id="utm_source">
+    <input type="hidden" name="utm_medium" id="utm_medium">
+    <input type="hidden" name="utm_campaign" id="utm_campaign">
+    <input type="hidden" name="utm_content" id="utm_content">
+
+    <button id="submitBtn" type="button"
+       style="display:block; width:100%; text-align:center;
+              background:linear-gradient(180deg,#4CC65D 0%, #348F47 100%);
+              color:#fff; padding:16px 24px; border:1px solid #D8A63C; border-radius:12px;
+              font-weight:700; font-size:1.1em; cursor:pointer;
+              text-decoration:none; box-shadow:0 8px 20px rgba(47,143,65,.25);">
+      Kirim Pesanan • Bisa COD
+    </button>
+  </form>
+</div>
+
+<style>
+  .error { color:red; font-size:0.9em; margin-bottom:10px; display:none; }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0px rgba(255,0,0,0.5); }
+    50% { box-shadow: 0 0 10px rgba(255,0,0,0.8); }
+    100% { box-shadow: 0 0 0px rgba(255,0,0,0.5); }
+  }
+
+  .pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+    border-color: red !important;
+    outline: none;
+  }
+
+  /* ✨ Animasi tombol Pesan Sekarang */
+  #submitBtn {
+    transition: all 0.25s ease-in-out;
+    transform-origin: center;
+    animation: popIn 0.4s ease-out;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.15);
+  }
+
+  @keyframes press {
+    from { transform: scale(1); }
+    to { transform: scale(0.90); }
+  }
+
+  /* Saat disentuh atau diklik */
+  #submitBtn:active {
+    animation: press 0.12s ease-out forwards;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  }
+
+  /* Saat hover (efek lembut di desktop) */
+  #submitBtn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 24px rgba(47,143,65,.35);
+    background: linear-gradient(180deg, #46B956 0%, #2F8F41 100%);
+  }
+
+  /* Efek animasi “denyut” kecil saat tombol muncul di layar */
+  @keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+</style>
+
+<script>
+  (function () {
+    function generateUID() {
+      if (window.crypto && window.crypto.randomUUID) {
+        return window.crypto.randomUUID();
+      }
+      return "mm-" + Date.now() + "-" + Math.random().toString(36).slice(2, 10);
+    }
+    window.getEventId = generateUID;
+
+    window.getExternalId = function () {
+      let uid = localStorage.getItem("mm_external_id");
+      if (uid) return uid;
+
+      uid = generateUID();
+      localStorage.setItem("mm_external_id", uid);
+      return uid;
+    };
+  })();
+</script>
+
+<script>
+  !function(f,b,e,v,n,t,s) {
+    if(f.fbq) return;
+    n = f.fbq = function() {
+      n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+    };
+    if(!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)
+  }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '2065795460502657', {
+    external_id: window.getExternalId()
+  });
+  
+  fbq('track', 'PageView');
+</script>
+
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2065795460502657&ev=PageView&noscript=1"/>
+</noscript>
+
+<script>
+(function(){
+
+const scriptURL = "https://api.madumuria.store";
+
+// 🔹 Helper untuk ambil _fbp (dengan fallback sementara)
+function getFbpValue() {
+  const m = document.cookie.match(/_fbp=([^;]+)/);
+  if (m) return m[1];
+  // fallback: buat ID pseudo FBP agar sheet tidak kosong
+  const pseudo = `fb.1.${Math.floor(Date.now()/1000)}.${Math.random().toString(36).slice(2,10)}`;
+  const domain = window.location.hostname.replace(/^www\./, "");
+  const rootDomain = domain.split('.').slice(-2).join('.');
+  document.cookie = `_fbp=${pseudo}; domain=.${rootDomain}; path=/; Secure; SameSite=None;`;
+  return pseudo;
+}
+
+  const n = document.getElementById("nama");
+  const a = document.getElementById("alamat");
+  const v = document.getElementById("varian");
+  const waInput = document.getElementById("no_wa");
+  const honey = document.getElementById("website");
+  const btn = document.getElementById("submitBtn");
+  let hasSubmitted = false;
+
+  const hargaMap = {
+    "Madu Muria 500gr": 75000,
+    "Madu Muria 1kg": 119000
+  };
+
+  // ================== HONEYPOT ==================
+  function isSpamBot(){ return honey && honey.value.trim() !== ""; }
+
+  // ================== VALIDASI ==================
+  function showErr(el,errEl,msg){ errEl.textContent=msg; errEl.style.display="block"; el.style.borderColor="red"; el.classList.add("pulse"); }
+  function hideErr(el,errEl){ errEl.textContent=""; errEl.style.display="none"; el.style.borderColor="#ccc"; el.classList.remove("pulse"); }
+
+  const ne=document.getElementById("namaError"),
+        ae=document.getElementById("alamatError"),
+        ve=document.getElementById("varianError"),
+        waError=document.getElementById("noWaError");
+
+function normalizeWA(val, strict = false) {
+  let x = String(val || "").trim().replace(/\D/g, "");
+  if (!x) return "";
+  if (x === "0") return "0";
+  if (x.startsWith("62")) {
+    return "0" + x.slice(2);
+  }
+  if (x.startsWith("8")) {
+    if (strict || x.length > 1) {
+      return "0" + x;
+    }
+  }
+  if (x.startsWith("00")) {
+    x = x.replace(/^0+/, ""); // pangkas semua nol di depan
+    if (x.startsWith("8") || x.length > 0) {
+      return "0" + x; // kembalikan ke format 08 / 0...
+    }
+  }
+  return x;
+}
+
+function VN(strict = true) { let x = n.value.trim(); if (!x) { if (strict) showErr(n, ne, "Nama wajib diisi."); return false;} if (!/^[A-Za-z\s'’.]+$/.test(x)) { if (strict) showErr(n, ne, "Nama hanya huruf & spasi"); return false;} let jumlahHuruf = (x.match(/[A-Za-z]/g) || []).length; if (jumlahHuruf < 2) { if (strict) showErr(n, ne, "Nama minimal 2 huruf"); return false;} hideErr(n, ne); return true;}
+
+/*function VW(){ let x = normalizeWA(waInput.value); if(!x){ showErr(waInput, waError, "Nomor WA wajib diisi."); return false; } waInput.value = x; if(!x.startsWith("08")){ showErr(waInput, waError, "Nomor WA harus diawali 08."); return false; } if(x.length < 10 || x.length > 15){ showErr(waInput, waError, "Nomor WA harus 10–15 digit"); return false; } hideErr(waInput, waError); return true;}*/
+
+function VW(strict = true) { let x = normalizeWA(waInput.value, strict); waInput.value = x; if (!x) { if (strict) { showErr(waInput, waError, "Nomor WA wajib diisi.");} else { hideErr(waInput, waError);} return false;} if (x.length >= 2) { if (!x.startsWith("08")) { showErr(waInput, waError, "Nomor WA harus diawali 08."); return false;}} if (x.length > 15) { showErr(waInput, waError, "Nomor WA maksimal 15 digit"); return false;} if (strict && x.length < 10) { showErr(waInput, waError, "Nomor WA harus 10–15 digit"); return false; } hideErr(waInput, waError); return x.length >= 10;}
+
+  function VA(){ let x=a.value.trim(); if(x.replace(/\s/g,"").length<10){showErr(a,ae,"Alamat minimal 10 karakter"); return false;} hideErr(a,ae); return true; }
+
+  function VV(){ if(!v.value){showErr(v, ve, "Silahkan pilih varian produk"); return false;} hideErr(v, ve); return true; }
+
+  // Real-time validation
+  a.addEventListener("input",VA);
+  v.addEventListener("change",VV);
+
+  n.addEventListener("input", () => {
+    n.value = n.value.replace(/[^A-Za-z\s'’.]/g, "");
+    VN(false);
+  });
+
+  n.addEventListener("blur", () => {
+    // ✨ Otomatis ubah jadi Huruf Kapital di setiap awal kata
+    n.value = n.value.trim().replace(/\b\w/g, char => char.toUpperCase());
+    VN(true);
+  });
+
+  waInput.addEventListener("input", () => {
+    VW(false);
+  });
+
+  waInput.addEventListener("blur", () => {
+    VW(true);
+  });
+
+  // ✨ Otomatis ubah jadi Huruf Kapital di setiap awal kata
+  a.addEventListener("blur", () => {
+    a.value = a.value.trim().replace(/\b\w/g, char => char.toUpperCase());
+  });
+
+// =======================
+// 📦 FBCLID + FBP + FBC + UTM Tracker (Hybrid Version - Safe for All Pages)
+// =======================
+(function() {
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Ambil fbclid dari URL jika ada
+    let fbclid = urlParams.get("fbclid");
+    if (fbclid) fbclid = decodeURIComponent(fbclid.trim());
+
+    const domain = window.location.hostname.replace(/^www\./, "");
+    const rootDomain = domain.split('.').slice(-2).join('.');
+
+    // ======================
+    // 🐝 Buat atau ambil _fbp (Facebook Browser ID)
+    // ======================
+    let fbp = document.cookie.match(/_fbp=([^;]+)/)?.[1];
+    if (!fbp) {
+      fbp = `fb.1.${Math.floor(Date.now() / 1000)}.${Math.random().toString(36).substring(2, 12)}`;
+      document.cookie = `_fbp=${fbp}; domain=.${rootDomain}; path=/; Secure; SameSite=None;`;
+    }
+    sessionStorage.setItem("fbp", fbp);
+
+    // ======================
+    // 🐝 Buat atau ambil _fbc (Facebook Click ID)
+    // ======================
+    let fbc;
+    if (fbclid && /^[A-Za-z0-9_-]{20,}$/.test(fbclid)) {
+      fbc = `fb.1.${Math.floor(Date.now() / 1000)}.${fbclid}`;
+    } else {
+      fbc =
+        sessionStorage.getItem("fbc") ||
+        document.cookie.match(/_fbc=([^;]+)/)?.[1] ||
+        "";
+    }
+
+    if (fbc && fbc.startsWith("fb.1.")) {
+      sessionStorage.setItem("fbc", fbc);
+      document.cookie = `_fbc=${fbc}; domain=.${rootDomain}; path=/; Secure; SameSite=None;`;
+    }
+
+    // ======================
+    // 🎯 Isi nilai UTM (jika elemen form tersedia)
+    // ======================
+    const utmFields = ["utm_source", "utm_medium", "utm_campaign", "utm_content"];
+    utmFields.forEach(field => {
+      const input = document.getElementById(field);
+      if (input) {
+        const value = urlParams.get(field) || (field === "utm_source" ? "direct" : "-");
+        input.value = value;
+      }
+    });
+
+    // ======================
+    // 🧭 Global + status siap
+    // ======================
+    window._madumuria_fbp = fbp;
+    window._madumuria_fbc = fbc;
+    window._madumuria_fbc_ready = true;
+
+  } catch (e) {
+    console.warn("⚠️ FBC Tracker Error:", e);
+  }
+})();
+
+/* =====================================================
+   📊 COLLECT DATA
+===================================================== */
+  function collectFormData(isSubmit=false, customEvent=null){
+    let waNumber = normalizeWA(waInput.value);
+    let waForSheet = waNumber.startsWith("08") ? "62" + waNumber.substring(1) : waNumber;
+    const fbp=sessionStorage.getItem("fbp")||document.cookie.match(/_fbp=([^;]+)/)?.[1]||"-";
+    const fbc=sessionStorage.getItem("fbc")||document.cookie.match(/_fbc=([^;]+)/)?.[1]||"-";
+    const value=hargaMap[v.value]||0;
+    //const eventId = window.getEventId?.() ?? crypto.randomUUID();
+    const eventId = typeof window.getEventId === "function" ? window.getEventId() : crypto.randomUUID();
+    const eventTime=Math.floor(Date.now()/1000);
+    const utm_source = document.getElementById("utm_source")?.value || "-";
+    const utm_medium = document.getElementById("utm_medium")?.value || "-";
+    const utm_campaign = document.getElementById("utm_campaign")?.value || "-";
+    const utm_content = document.getElementById("utm_content")?.value || "-";
+    const event_name=customEvent||(isSubmit?"Lead":"Abandoned");
+
+    return {
+      timestamp:new Date().toISOString(),
+      fbp,fbc,
+      varian:v.value||"-",
+      nama:n.value.trim()||"-",
+      alamat:a.value.trim()||"-",
+      no_wa:waForSheet,
+      status:event_name, // supaya ViewContent juga punya status
+      value:Number(value)||0,
+      utm_source,utm_medium,utm_campaign,utm_content,
+      page_url: window.location.href,
+      event_name,event_time:eventTime,event_id:eventId,
+      external_id:window.getExternalId(),
+      action_source:"website"
+    };
+  }
+
+  /* ================== SYSTEM PENGIRIMAN RELIABEL ================== */
+  const LOCAL_QUEUE_KEY='madu_view_queue_v1';
+  function enqueueForRetry(payload){
+    const q=JSON.parse(localStorage.getItem(LOCAL_QUEUE_KEY)||'[]');
+    q.push(payload);
+    localStorage.setItem(LOCAL_QUEUE_KEY,JSON.stringify(q));
+  }
+  async function flushQueue(){
+    const q=JSON.parse(localStorage.getItem(LOCAL_QUEUE_KEY)||'[]');
+    if(!q.length)return;
+    for(const p of q.slice()){
+      try{
+        await trySend(p,{useBeaconIfPossible:true,allowRetry:false});
+        const cur=JSON.parse(localStorage.getItem(LOCAL_QUEUE_KEY)||'[]');
+        cur.shift();
+        localStorage.setItem(LOCAL_QUEUE_KEY,JSON.stringify(cur));
+      }catch(e){break;}
+    }
+  }
+  async function trySend(data,opts={useBeaconIfPossible:true,allowRetry:true}){
+    const body=new URLSearchParams(data).toString();
+    if(opts.useBeaconIfPossible&&navigator.sendBeacon){
+      const blob=new Blob([body],{type:"application/x-www-form-urlencoded"});
+      if(navigator.sendBeacon(scriptURL,blob)){
+        //console.log(`📤 beacon ${data.status}`);
+        return;}
+    }
+    try{
+      const r=await fetch(scriptURL,{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body,keepalive:true});
+      if(!r.ok)throw new Error(r.status);
+      console.log(`✅ fetch ${data.status}`);
+    }catch(e){
+      if(opts.allowRetry)throw e;
+    }
+  }
+  async function sendToSheet(data){
+    try{await trySend(data);}catch(e){enqueueForRetry(data);}
+  }
+
+// --- expose ke window agar script floating bisa akses ---
+window.collectFormData = collectFormData;
+window.sendToSheet = sendToSheet;
+
+// ================== UNIVERSAL DATA HELPER ==================
+window.getFormDataSafe = function(source = "Unknown") {
+  try {
+    if (typeof collectFormData === "function") {
+      return collectFormData(false, source);
+    }
+  } catch (e) {
+    console.warn("⚠️ collectFormData error:", e);
+  }
+
+  // fallback (kalau form kosong / belum ready)
+  return {
+    varian: "-",
+    nama: "-",
+    alamat: "-",
+    no_wa: "-",
+    status: source
+  };
+};
+
+// ================== RETRY QUEUE AUTO FLUSH ==================
+window.addEventListener("load", flushQueue);
+window.addEventListener("online", flushQueue);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") flushQueue();
+});
+
+// ================== VIEWCONTENT ==================
+let viewContentSent = false;
+
+async function sendViewContentSafe(triggerReason) {
+  try {
+    if (isSpamBot() || viewContentSent) return;
+
+    // 🔹 Jangan tunggu IP (VC ≠ Lead)
+    const viewData = collectFormData(false, "ViewContent");
+    viewData.trigger = triggerReason || "unknown";
+
+    // 🔹 Pastikan FBP ada
+    const fbpNow = getFbpValue();
+    document.cookie = `_fbp=${fbpNow}; path=/; SameSite=None; Secure;`;
+    viewData.fbp = fbpNow;
+
+    // ✅ Samakan event_id sheet dengan Pixel eventID
+    viewData.event_id = `${viewData.event_id}_viewcontent`;
+
+    // 🔒 kunci flag SETELAH data siap
+    viewContentSent = true;
+
+    // ✅ kirim ke Facebook Pixel
+    if (typeof fbq === "function") {
+      fbq('track', 'ViewContent', {
+        content_ids: ['madu_muria_500gr', 'madu_muria_1kg'],
+        content_type: 'product',
+        content_name: 'Madu Muria',
+        content_category: 'Madu Asli'
+      }, {
+        eventID: viewData.event_id
+    });
+    //console.log("📡 fbq ViewContent terkirim ke Pixel");
+    //console.log("👁 ViewContent terkirim:", viewData);
+    //console.log("👁 VC fired:", triggerReason, viewData.event_id);
+   }
+    //sendToSheet(viewData);
+  } catch (e) {
+    console.warn("⚠️ ViewContent error:", e);
+  }
+}
+
+// ================== TRIGGER LOGIC ==================
+function tryFireVC(reason) {
+  if (viewContentSent) return;
+  sendViewContentSafe(reason);
+}
+
+// ⏳ Delay 1 detik
+setTimeout(() => {
+  tryFireVC("delay");
+}, 1000);
+
+// 📜 Scroll 10%
+let vcScrollDone = false;
+window.addEventListener("scroll", () => {
+  if (vcScrollDone) return;
+
+  const scrolled =
+    (window.scrollY + window.innerHeight) /
+    document.documentElement.scrollHeight * 100;
+
+  if (scrolled >= 10) {
+    vcScrollDone = true;
+    tryFireVC("scroll");
+  }
+}, { passive: true });
+
+// 🧭 Fallback: user aktif tapi tidak scroll
+["touchstart","mousedown","keydown"].forEach(ev => {
+  document.addEventListener(ev, () => tryFireVC("interaction"), { once:true });
+});
+
+  // ================== ABANDONED ==================
+  function validateAbandoned(){
+    const namaVal = n.value.trim();
+    const waVal = normalizeWA(waInput.value);
+    return (
+      namaVal.length >= 2 &&
+      /^[A-Za-z\s'’.]+$/.test(namaVal) &&  // Hanya huruf & spasi
+      waVal.startsWith("08") &&           // Dipastikan diawali 08 setelah dinormalisasi
+      waVal.length >= 10 && waVal.length <= 15
+    );
+  }
+
+  let abandonedTimer;
+  let lastAbandonedSentAt = 0;
+  let lastIpRetryAt = 0;
+
+async function triggerAbandoned(){
+  clearTimeout(abandonedTimer);
+  abandonedTimer = setTimeout(async () => {
+    if (hasSubmitted || !validateAbandoned()) return;
+
+    const now = Date.now();
+
+    /* ================== THROTTLE SEND ================== */
+    // ⛔ jangan kirim terlalu rapat (min 5 detik)
+    if (now - lastAbandonedSentAt < 5000) return;
+    lastAbandonedSentAt = now;
+
+    /* ================== SEND ================== */
+    const data = collectFormData(false);
+    data.abandoned_seq = Math.floor(now / 5000); // optional analytics
+
+    void sendToSheet(data);
+
+  }, 5000); // idle 5 detik
+}
+
+/* ================== EVENT BINDING ================== */
+document.querySelectorAll("input, textarea, select").forEach(el => {
+  el.addEventListener("input", triggerAbandoned);
+  el.addEventListener("blur", triggerAbandoned);
+});
+
+function sendAbandonedBeforeExit(){
+  if (hasSubmitted || isSpamBot()) return;
+  if (!validateAbandoned()) return;
+  const data = collectFormData(false);
+  data.exit_trigger = "page_exit";
+  void sendToSheet(data);
+}
+
+window.addEventListener("pagehide", sendAbandonedBeforeExit);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") {
+    sendAbandonedBeforeExit();
+  }
+});
+
+// ================== SUBMIT FORM ==================
+btn.addEventListener("click", function(e) {
+  e.preventDefault();
+  if (isSpamBot() || hasSubmitted) return;
+  if (!VN() || !VW() || !VA()) return;
+
+  hasSubmitted = true;
+  btn.disabled = true;
+  btn.style.pointerEvents = "none";
+  btn.style.cursor = "not-allowed";
+  btn.style.opacity = "0.8";
+  btn.innerHTML = "📤 Menyimpan data...";
+  btn.style.background = "linear-gradient(135deg,#f9a825,#f57c00)";
+
+  try {
+    const lead = collectFormData(true);
+    void sendToSheet(lead); // Tetap aman kirim ke sheet di background
+
+    const msg = `Halo Kak, saya ingin pesan *Madu Muria*\n\n` +
+                `*Varian* : ${v.value}\n` +
+                `*Nama* : ${n.value.trim()}\n` +
+                `*No WA* : ${waInput.value}\n` +
+                `*Alamat* : ${a.value.trim()}\n\n` +
+                `Mohon segera diproses ya`;
+
+    const waLink = `https://wa.me/628813799744?text=${encodeURIComponent(msg)}`;
+
+      // ✅ Gunakan window.isMobile di sini
+      if (window.isMobile) {
+        window.location.href = waLink;
+        window.location.assign(waLink);
+      } else {
+        window.open(waLink, "_blank", "noopener,noreferrer");
+      }
+
+      setTimeout(() => {
+        btn.innerHTML = "✅ Order Sudah Diterima";
+        btn.style.background = "#757575";
+        n.disabled = true;
+        waInput.disabled = true;
+        a.disabled = true;
+        v.disabled = true;
+      }, 500);
+
+  } catch (err) {
+    console.error("❌ Error submit:", err);
+    hasSubmitted = false;
+    btn.disabled = false;
+    btn.style.pointerEvents = "auto";
+    btn.style.cursor = "pointer";
+    btn.style.opacity = "1";
+    btn.innerHTML = 'Pesan Sekarang';
+    btn.style.background = "linear-gradient(135deg,#f9a825,#f57c00)";
+    alert("Terjadi kesalahan sistem, silakan coba lagi.");
+  }
+});
+
+})();
+</script>
+
+  </div> <!-- END CONTAINER -->
+
+
+  <!-- FLOATING WA (Tombol Melayang di Bawah Layar HP) -->
+<script>
+(function initWAWidget() {
+  // Jalankan setelah DOM siap
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initWAWidget);
+    return;
+  }
+
+  // ===== 1. Pembuatan Tombol Floating (Hidden Initially) =====
+  const btn = document.createElement("div");
+  btn.id = "wa-float-btn";
+  btn.style.cssText = `
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 2147483647;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  `;
+  btn.innerHTML = `
+<svg class="wa-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.6C8 23.5 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0zm0 22c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.6 15.5 2 13.8 2 12 2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10zm5.5-7.6c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.2-.7.9-.9 1.1-.2.2-.3.2-.6.1-.8-.4-1.7-1-2.4-1.8-.6-.7-1-1.4-1.3-2-.1-.2 0-.4.1-.5.2-.2.4-.5.6-.7.2-.2.2-.4.1-.6-.1-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 2.7 1.1 2.7.7 3.2.7.5 0 1.6-.6 1.8-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/>
+</svg>
+`;
+  document.body.appendChild(btn);
+
+  // ===== 2. Styles (Pulse & Shake Elegant) =====
+  const style = document.createElement("style");
+  style.textContent = `
+    /* Efek Pulse Halus Berkelanjutan */
+    #wa-float-btn {
+      animation: wa-pulse 2s infinite;
+    }
+    /* Efek Shake Elegan Setiap 8 Detik */
+    #wa-float-btn .wa-icon {
+      display: inline-block;
+      animation: wa-shake-subtle 8s infinite;
+    }
+
+    @keyframes wa-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    @keyframes wa-shake-subtle {
+      0%, 90%, 100% { transform: rotate(0deg); }
+      92% { transform: rotate(-15deg); }
+      94% { transform: rotate(13deg); }
+      96% { transform: rotate(-10deg); }
+      98% { transform: rotate(8deg); }
+    }
+
+    @media(max-width:768px){
+      #wa-float-btn {
+        width: 55px !important;
+        height: 55px !important;
+        font-size: 32px !important;
+        bottom: 15px !important;
+        right: 15px !important;
+      }
+    }
+
+    @media (max-width:768px) {
+      #wa-float-btn .wa-icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+
+  // ===== 3. Logika Delay Tampilan (10 Detik ATAU Scroll 30%) =====
+  let isShown = false;
+
+  function showButton() {
+    if (isShown) return;
+    isShown = true;
+    btn.style.visibility = "visible";
+    btn.style.opacity = "1";
+    // Hapus event listener scroll setelah tombol muncul agar hemat memori
+    window.removeEventListener("scroll", handleScroll);
+    document.removeEventListener("scroll", handleScroll, true);
+  }
+
+  // A. Trigger 1: Delay 10 Detik
+  setTimeout(showButton, 10000);
+
+  // B. Trigger 2: Scroll 30% (Otomatis mendeteksi Kotak Buat.id)
+  function handleScroll(e) {
+    // 1. Ambil elemen yang BENAR-BENAR sedang bergeser saat ini
+    let target = e.target;
+
+    // Jika yang merespon adalah document/window utama, arahkan ke scrolling element standar
+    if (target === document || target === window) {
+      target = document.scrollingElement || document.documentElement;
+    }
+
+    // 2. Ambil nilai scroll khusus dari elemen yang sedang bergerak tersebut
+    const scrollTop = target.scrollTop || window.scrollY || 0;
+    const scrollHeight = target.scrollHeight || 0;
+    const clientHeight = target.clientHeight || window.innerHeight || 0;
+
+    const docHeight = scrollHeight - clientHeight;
+
+    // 3. Pastikan elemen ini memang area scroll utama (tinggi sisa lebih dari 100px)
+    // Mencegah error jika pengunjung secara tidak sengaja men-scroll kotak teks (textarea) kecil
+    if (docHeight > 100) {
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      if (scrollPercent >= 30) {
+        showButton();
+      }
+    }
+  }
+
+  // Pasang pendeteksi dengan parameter { capture: true }
+  // Ini adalah "jaring" wajib untuk menangkap scroll dari dalam <div> buatan Buat.id
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  document.addEventListener("scroll", handleScroll, { passive: true, capture: true });
+
+  // ===== 4. Deteksi Perangkat HP/Mobile Sederhana =====
+  const isMobile = window.isMobile ?? /Android|webOS|iPhone|iPad|iPod|BlackBerry|Mobi|Mobile|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  // ===== 5. Aksi Klik: Send data then Direct Redirect =====
+  let clickingWA = false;
+  btn.onclick = function(e) {
+    e.preventDefault();
+
+    if (clickingWA) return;
+    clickingWA = true;
+    setTimeout(() => clickingWA = false, 1500); // proteksi spam click
+
+    // Ambil data form jika ada
+    const d = typeof window.getFormDataSafe === "function"
+      ? window.getFormDataSafe("Abandoned-WA")
+      : { varian: "-", nama: "-", alamat: "-", no_wa: "-" };
+
+    // Kirim data ke sheet di background (async)
+    if (typeof window.sendToSheet === "function" && !window.__abandonedWASent) {
+      void sendToSheet(d);
+      window.__abandonedWASent = true;
+    }
+
+    // Format pesan otomatis
+    const message =
+      `Halo Kak, saya ingin pesan *Madu Muria*\n\n` +
+      `*Varian*: ${d.varian}\n` +
+      `*Nama*: ${d.nama}\n` +
+      `*No. WhatsApp*: ${d.no_wa}\n` +
+      `*Alamat*: ${d.alamat}\n\n` +
+      `Mohon segera diproses ya`;
+
+    const url = "https://wa.me/628813799744?text=" + encodeURIComponent(message);
+
+    // Pengalihan halaman URL
+    if (window.isMobile) {
+      window.location.href = url;
+      window.location.assign(url);
+    } else {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
+
+})();
+</script>
+
+</body>
+</html>
