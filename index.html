@@ -664,12 +664,27 @@
     window.getEventId = generateUID;
 
     window.getExternalId = function () {
-      let uid = localStorage.getItem("mm_external_id");
-      if (uid) return uid;
-
-      uid = generateUID();
-      localStorage.setItem("mm_external_id", uid);
-      return uid;
+      const STORAGE_KEY = "mm_external_id";
+      const EXPIRATION_DAYS = 7;
+      const EXPIRATION_MS = EXPIRATION_DAYS * 24 * 60 * 60 * 1000;
+      let storedData = localStorage.getItem(STORAGE_KEY);
+      if (storedData) {
+        try {
+          let parsedData = JSON.parse(storedData);
+          let now = Date.now();
+          if (now - parsedData.timestamp < EXPIRATION_MS) {
+            return parsedData.uid;
+          }
+        } catch (e) {
+        }
+      }
+      let newUid = generateUID();
+      let newData = {
+        uid: newUid,
+        timestamp: Date.now()
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(newData));
+      return newUid;
     };
   })();
 </script>
@@ -695,7 +710,6 @@
   fbq('init', '2065795460502657', {
     external_id: window.getExternalId()
   });
-  
   fbq('track', 'PageView');
 </script>
 
@@ -767,14 +781,10 @@ function normalizeWA(val, strict = false) {
 }
 
 function VN(strict = true) { let x = n.value.trim(); if (!x) { if (strict) showErr(n, ne, "Nama wajib diisi."); return false;} if (!/^[A-Za-z\s'’.]+$/.test(x)) { if (strict) showErr(n, ne, "Nama hanya huruf & spasi"); return false;} let jumlahHuruf = (x.match(/[A-Za-z]/g) || []).length; if (jumlahHuruf < 2) { if (strict) showErr(n, ne, "Nama minimal 2 huruf"); return false;} hideErr(n, ne); return true;}
-
 /*function VW(){ let x = normalizeWA(waInput.value); if(!x){ showErr(waInput, waError, "Nomor WA wajib diisi."); return false; } waInput.value = x; if(!x.startsWith("08")){ showErr(waInput, waError, "Nomor WA harus diawali 08."); return false; } if(x.length < 10 || x.length > 15){ showErr(waInput, waError, "Nomor WA harus 10–15 digit"); return false; } hideErr(waInput, waError); return true;}*/
-
 function VW(strict = true) { let x = normalizeWA(waInput.value, strict); waInput.value = x; if (!x) { if (strict) { showErr(waInput, waError, "Nomor WA wajib diisi.");} else { hideErr(waInput, waError);} return false;} if (x.length >= 2) { if (!x.startsWith("08")) { showErr(waInput, waError, "Nomor WA harus diawali 08."); return false;}} if (x.length > 15) { showErr(waInput, waError, "Nomor WA maksimal 15 digit"); return false;} if (strict && x.length < 10) { showErr(waInput, waError, "Nomor WA harus 10–15 digit"); return false; } hideErr(waInput, waError); return x.length >= 10;}
-
-  function VA(){ let x=a.value.trim(); if(x.replace(/\s/g,"").length<10){showErr(a,ae,"Alamat minimal 10 karakter"); return false;} hideErr(a,ae); return true; }
-
-  function VV(){ if(!v.value){showErr(v, ve, "Silahkan pilih varian produk"); return false;} hideErr(v, ve); return true; }
+function VA(){ let x=a.value.trim(); if(x.replace(/\s/g,"").length<10){showErr(a,ae,"Alamat minimal 10 karakter"); return false;} hideErr(a,ae); return true; }
+function VV(){ if(!v.value){showErr(v, ve, "Silahkan pilih varian produk"); return false;} hideErr(v, ve); return true; }
 
   // Real-time validation
   a.addEventListener("input",VA);
@@ -1168,7 +1178,6 @@ btn.addEventListener("click", function(e) {
 
   </div> <!-- END CONTAINER -->
 
-
   <!-- FLOATING WA (Tombol Melayang di Bawah Layar HP) -->
 <script>
 (function initWAWidget() {
@@ -1344,9 +1353,7 @@ btn.addEventListener("click", function(e) {
       window.open(url, "_blank", "noopener,noreferrer");
     }
   };
-
 })();
 </script>
-
 </body>
 </html>
