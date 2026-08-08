@@ -665,25 +665,22 @@
 
     window.getExternalId = function () {
       const STORAGE_KEY = "mm_external_id";
-      const EXPIRATION_DAYS = 7;
-      const EXPIRATION_MS = EXPIRATION_DAYS * 24 * 60 * 60 * 1000;
-      let storedData = localStorage.getItem(STORAGE_KEY);
-      if (storedData) {
+      const storedValue = localStorage.getItem(STORAGE_KEY);
+      if (storedValue) {
+        if (!storedValue.startsWith("{") && !storedValue.startsWith("[")) {
+          return storedValue;
+        }
         try {
-          let parsedData = JSON.parse(storedData);
-          let now = Date.now();
-          if (now - parsedData.timestamp < EXPIRATION_MS) {
-            return parsedData.uid;
+          const parsed = JSON.parse(storedValue);
+          if (parsed.uid) {
+            localStorage.setItem(STORAGE_KEY, parsed.uid);
+            return parsed.uid;
           }
         } catch (e) {
-        }
       }
-      let newUid = generateUID();
-      let newData = {
-        uid: newUid,
-        timestamp: Date.now()
-      };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(newData));
+    }
+      const newUid = generateUID();
+      localStorage.setItem(STORAGE_KEY, newUid);
       return newUid;
     };
   })();
