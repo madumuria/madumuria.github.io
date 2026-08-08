@@ -1134,8 +1134,7 @@ btn.addEventListener("click", function(e) {
     const lead = collectFormData(true);
     void sendToSheet(lead); // Tetap aman kirim ke sheet di background
 
-    const msg = `Halo Kak, saya ingin pesan *Madu Muria*\n\n` +
-                `*Varian* : ${v.value}\n` +
+    const msg = `Halo Kak, saya ingin pesan *${v.value}*\n\n` +
                 `*Nama* : ${n.value.trim()}\n` +
                 `*No WA* : ${waInput.value}\n` +
                 `*Alamat* : ${a.value.trim()}\n\n` +
@@ -1336,8 +1335,7 @@ btn.addEventListener("click", function(e) {
 
     // Format pesan otomatis
     const message =
-      `Halo Kak, saya ingin pesan *Madu Muria*\n\n` +
-      `*Varian*: ${d.varian}\n` +
+      `Halo Kak, saya ingin pesan *{d.varian}*\n\n` +
       `*Nama*: ${d.nama}\n` +
       `*No. WhatsApp*: ${d.no_wa}\n` +
       `*Alamat*: ${d.alamat}\n\n` +
